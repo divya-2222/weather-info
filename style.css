@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass card */
+.container {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Input */
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #00c6ff;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Weather Box */
+#weatherBox {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Text */
+#weatherBox h2 {
+  margin: 10px 0;
+}
+
+#weatherBox p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+
+/* 📱 Mobile devices */
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #weatherBox {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
